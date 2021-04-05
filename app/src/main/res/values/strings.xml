@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sinohara</string>
+    <string name="search">検索</string>
+    <string name="library">本棚</string>
 </resources>

@@ -8,7 +8,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
+        android:background="#EEE9E8"
+        android:gravity="bottom"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -16,7 +18,7 @@
         <ImageButton
             android:id="@+id/home"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -25,7 +27,7 @@
         <ImageButton
             android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -34,7 +36,7 @@
         <ImageButton
             android:id="@+id/post"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -43,7 +45,7 @@
         <ImageButton
             android:id="@+id/or"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -52,7 +54,7 @@
         <ImageButton
             android:id="@+id/library"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -63,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#EEE9E8"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,8 +73,8 @@
 
         <ImageButton
             android:id="@+id/settings"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/tosettings" />
@@ -79,21 +82,21 @@
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
+            android:layout_height="40dp"
             android:layout_weight="1" />
 
         <ImageButton
             android:id="@+id/update"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/update_home" />
 
         <ImageButton
             android:id="@+id/bookmark"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/bookmark" />
@@ -101,13 +104,13 @@
         <View
             android:id="@+id/view2"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_weight="1" />
 
         <ImageButton
             android:id="@+id/profile"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/toprofile" />

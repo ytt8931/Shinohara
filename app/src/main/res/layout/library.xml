@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:background="#0FFFFFFF">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="54dp"
+        android:background="#EEE9E8"
+        android:gravity="bottom"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -15,7 +23,7 @@
         <ImageButton
             android:id="@+id/home"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -24,7 +32,7 @@
         <ImageButton
             android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -33,7 +41,7 @@
         <ImageButton
             android:id="@+id/post"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -42,7 +50,7 @@
         <ImageButton
             android:id="@+id/or"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -51,7 +59,7 @@
         <ImageButton
             android:id="@+id/library"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:background="#EEE9E8"
             android:scaleType="centerInside"
@@ -64,8 +72,87 @@
         android:layout_height="73dp"
         android:text="library"
         android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EEE9E8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="#EEE9E8"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/shiborikomi" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/library"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="60dp"
+            android:layout_height="43dp"
+            android:background="#EEE9E8"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/tosearch" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="#59EDD9D2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/background" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/favorite" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
